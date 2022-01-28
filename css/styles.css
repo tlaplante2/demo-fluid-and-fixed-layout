@@ -8,6 +8,15 @@ body {
     text-align: center;
     color: white;
 }
+.flex-container {
+    display: flex;
+    gap: 15px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
 
 header,
 footer {
@@ -34,4 +43,18 @@ nav {
     background-color: rgb(137, 192, 160);
     padding: 128px 0;
     margin-bottom: 24px;
+    width: calc(100% / 3); /* divides promo section into thirds*/
+}
+
+@media  screen and (min-width: 1300px){
+    .container {
+        width: 1200px;
+        margin: 0 auto; /* makes the content centered after 1300px/ fullscreen*/
+    }
+}
+
+@media  screen and (min-width: 1800px) {
+    .container {
+        width: 1700px;
+    }
 }
